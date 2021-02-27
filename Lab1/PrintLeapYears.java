@@ -8,6 +8,6 @@ public class PrintLeapYears {
                 leapyears++;
             }
         }
-        System.out.print(leapyears);
+        System.out.printf("%d",leapyears);
     }
 }
