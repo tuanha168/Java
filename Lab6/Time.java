@@ -22,15 +22,27 @@ public class Time {
     }
 
     public void setHour(int hour) {
-        this.hour = hour;
+        if (hour >= 0 && hour <= 23) {
+            this.hour = hour;
+        }
+        else
+            throw new IllegalArgumentException("Invalid Hour");
     }
 
     public void setMinute(int minute) {
-        this.minute = minute;
+        if (minute >= 0 && minute <= 59) {
+            this.minute = minute;
+        }
+        else
+            throw new IllegalArgumentException("Invalid Minute");
     }
 
     public void setSecond(int second) {
-        this.second = second;
+        if (second >= 0 && second <= 59) {
+            this.second = second;
+        }
+        else
+            throw new IllegalArgumentException("Invalid Second");
     }
 
     public String toString() {
