@@ -34,8 +34,7 @@ public class Time {
     }
 
     public String toString() {
-        String a = String.format("%02d:%02d:%02d",hour,minute,second);
-        return a;
+        return String.format("%02d:%02d:%02d",hour,minute,second);
     }
 
     public Time nextSecond() {

@@ -40,7 +40,6 @@ public class Date {
     }
 
     public String toString() {
-        String a = String.format("%02d/%02d/%02d",day,month,year);
-        return a;
+        return String.format("%02d/%02d/%02d",day,month,year);
     }
 }
