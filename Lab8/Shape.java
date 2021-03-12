@@ -1,5 +1,6 @@
 package Lab8;
 
+
 abstract class Shape {
    private String color;
    
